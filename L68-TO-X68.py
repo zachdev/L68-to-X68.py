@@ -37,6 +37,7 @@ class L68ToX68:
 
         if not os.path.isfile(file_path):
             self.print_error_message()
+            exit()
 
         f_in = open(file_path, "r+")
         f_in_list = f_in.readlines()
